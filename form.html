@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Web Forms</title>
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+
+    <!-- Fontawesome -->
+    <i class="fas fa-copyright"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fas fa-trash-alt"></i>
+    <i class="fas fa-map-marker-alt"></i>
+
+
+    <!-- bootstrap -->
+    <!-- fixed container (container), flexible container(container-fluid) -->
+
+    <div class="container">
+        <h1>Web Forms Using Boot</h1>
+        <!-- input attribute - name, id, placeholder, required, pattern, disabled -->
+        
+        <form action="" method="">
+
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" id="email">
+            </div>
+            
+            <div class="form-group">
+                <label class ="form-label" for="name">Name</label>
+                <input type="text" class="form-control" name="name" placeholder="Enter Your Name">
+            </div>
+            <br>
+            <div>
+                <label for="password" >Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            
+            <div>
+                <label for="city">Your State</label>
+                <select name="city" id="city">
+                    <option value="1">Seattle</option>
+                    <option value="2">Tacoma</option>
+                    <option value="3">Bellingham</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="conditions">Agree to terms and conditions</label>
+                <input type="radio" name="conditions" id="conditions">
+            </div>
+            
+            <div>
+                <label for="remember">Remember Password</label>
+                <input type="checkbox" name="remember" id="remember">
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div><!-- container -->
+
+</body>
+</html>
